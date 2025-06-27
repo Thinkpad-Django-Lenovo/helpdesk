@@ -1,0 +1,91 @@
+.tickets-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 70, 118, 0.1);
+  overflow-x: auto;
+}
+
+.tickets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-count {
+  background: #004674;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.tickets-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tickets-table th,
+.tickets-table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+
+.tickets-table th {
+  background-color: #f0f6fa;
+  color: #004674;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-resolved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.btn-action {
+  margin: 2px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-resolve {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-resolve:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  color: #333;
+}
