@@ -1,0 +1,15 @@
+# Python
+*.pyc
+__pycache__/
+env/
+venv/
+*.sqlite3
+db.sqlite3
+
+media/
+
+# VSCode
+.vscode/
+
+# Env vars
+.env
