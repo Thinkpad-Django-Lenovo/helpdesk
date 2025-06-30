@@ -1,0 +1,192 @@
+/* Center login/register pages */
+.center-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* account for navbar */
+}
+
+/* Inner content wrapper */
+.page-wrapper {
+  width: 100%;
+  max-width: 450px;
+}
+/* Reset and layout foundation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Root container fills the screen */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content area layout after Navbar */
+.app-layout {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Sidebar style (already in your Sidebar.css too) */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #1d3557;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Main content shifts right of sidebar */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  width: calc(100% - 240px);
+  background-color: #f9f9f9;
+}
+
+/* Optional card style for page sections */
+.page-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Ensure this matches your root styling */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Adjust based on Navbar height if fixed */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+  margin-left: 240px; /* Sidebar width */
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.w-100 {
+  margin-left: 0 !important;
+}
+
+/* Navbar.css */
+.custom-navbar {
+  background: linear-gradient(90deg, #1f1c2c, #928dab);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.brand-animate {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.4s ease;
+}
+
+.brand-animate:hover {
+  transform: scale(1.08);
+  color: #ffd369;
+}
+
+.link-hover {
+  position: relative;
+  color: #f0f0f0 !important;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  height: 2px;
+  background-color: #ffd369;
+  transition: width 0.3s ease;
+}
+
+.link-hover:hover {
+  color: #ffd369 !important;
+}
+
+.link-hover:hover::after {
+  width: 80%;
+}
+
+.logout-btn {
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #721c24;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #1d3557;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 60px; /* If Navbar height is 60px */
+  left: 0;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  transition: margin-left 0.3s ease;
+}
+
+.center-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  margin-left: 0 !important;
+}

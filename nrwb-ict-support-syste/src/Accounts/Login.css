@@ -1,0 +1,102 @@
+/* Full-page wrapper to center the form */
+.form-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f8fc;
+  padding: 20px;
+}
+
+/* Container for potential future layout flexibility */
+.form-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Card-style form */
+.form-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 70, 118, 0.15);
+  width: 100%;
+  text-align: center;
+}
+
+/* Logo at top */
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 30px;
+  color: #004674;
+}
+
+/* Input group wrapper */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Icons inside input */
+.input-icon {
+  position: absolute;
+  left: 12px;
+  color: #004674;
+  font-size: 16px;
+}
+
+/* Input styling */
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 36px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #0071b4;
+  box-shadow: 0 0 6px rgba(0, 113, 180, 0.25);
+}
+
+/* Submit button */
+.btn-primary {
+  background-color: #004674;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0071b4;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 30px 20px;
+  }
+
+  .logo {
+    width: 90px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}

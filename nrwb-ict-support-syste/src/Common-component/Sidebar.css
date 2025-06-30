@@ -1,0 +1,94 @@
+.sidebar {
+  width: 220px;
+  background-color: #2e3b55;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+
+  /* Center content vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar h2 {
+  color: #9fd3c7;
+  font-size: 22px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 10px;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.sidebar nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 0;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  font-size: 16px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a:focus {
+  background-color: #1f2a3f;
+  transform: translateX(6px);
+  outline: none;
+}
+
+.logout-btn {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  user-select: none;
+  width: 100%;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  background-color: #e60000;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Scrollbar for nav if overflow needed */
+.sidebar nav {
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+/* Optional: smooth scrollbar */
+.sidebar nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar nav::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}

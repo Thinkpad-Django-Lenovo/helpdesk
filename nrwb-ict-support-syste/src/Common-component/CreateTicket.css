@@ -1,0 +1,104 @@
+/* src/pages/Form.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  
+  background-color: aqua;
+  
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #f5f8fc;
+  margin: 40px auto;
+ 
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 70, 118, 0.15);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #004674;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Icon styling */
+.input-icon {
+  position: absolute;
+  left: 12px;
+  color: #004674;
+  font-size: 16px;
+  pointer-events: none; /* So icon does not block clicks */
+}
+
+/* Inputs and textarea styling */
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 12px 12px 12px 36px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  appearance: none; /* Remove default arrow for select on some browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%200l5%205%205-5z%22%20fill%3D%22%23004674%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 7px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #0071b4;
+  box-shadow: 0 0 5px rgba(0, 113, 180, 0.25);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-primary {
+  background-color: #004674;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0071b4;
+}
